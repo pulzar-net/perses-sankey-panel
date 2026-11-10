@@ -1,0 +1,15 @@
+{
+  "kind": "PulzrSankeyPanel",
+  "spec": {
+    "links": [
+      { "from": "Parking", "to": "Gross", "series": "Parking" },
+      { "from": "Permits", "to": "Gross", "series": "Permits" },
+      { "from": "Gross", "to": "Refunds", "series": "Refunds" },
+      { "from": "Gross", "to": "Processor fees", "series": "Processor fees" },
+      { "from": "Gross", "to": "Tax", "series": "Tax" },
+      { "from": "Gross", "to": "Net", "series": "Net" }
+    ],
+    "format": { "unit": "usd", "decimalPlaces": 2 },
+    "colors": { "Parking": "#2563eb", "Permits": "#7c3aed", "Gross": "#64748b", "Net": "#10b981" }
+  }
+}
