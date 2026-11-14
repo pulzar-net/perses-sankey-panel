@@ -1,5 +1,10 @@
 # Sankey panel for Perses
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/pulzar-net/perses-sankey-panel/releases/latest/download/preview-dark.png">
+  <img alt="The PulzrSankeyPanel: revenue from parking, permits and events flowing into gross and out to refunds, fees, tax and net" src="https://github.com/pulzar-net/perses-sankey-panel/releases/latest/download/preview-light.png">
+</picture>
+
 `PulzrSankeyPanel` draws where amounts came from and where they went: revenue by source flowing into gross, then out to refunds, processor fees, tax and net. Each node is labelled outside with its name and a short value, `Parking $8.3k`.
 
 ```yaml

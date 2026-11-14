@@ -1,0 +1,119 @@
+{
+ "$schema": "https://raw.githubusercontent.com/pulzar-net/perses-panel-preview/main/sample.schema.json",
+ "timeRange": {
+  "start": "2026-01-14T00:00:00Z",
+  "end": "2026-01-15T00:00:00Z"
+ },
+ "panel": {
+  "kind": "Panel",
+  "spec": {
+   "display": {
+    "name": "Revenue flow"
+   },
+   "plugin": {
+    "kind": "PulzrSankeyPanel",
+    "spec": {
+     "links": [
+      {
+       "from": "Parking",
+       "to": "Gross",
+       "series": "Parking"
+      },
+      {
+       "from": "Permits",
+       "to": "Gross",
+       "series": "Permits"
+      },
+      {
+       "from": "Events",
+       "to": "Gross",
+       "series": "Events"
+      },
+      {
+       "from": "Gross",
+       "to": "Refunds",
+       "series": "Refunds"
+      },
+      {
+       "from": "Gross",
+       "to": "Processor fees",
+       "series": "Processor fees"
+      },
+      {
+       "from": "Gross",
+       "to": "Tax",
+       "series": "Tax"
+      },
+      {
+       "from": "Gross",
+       "to": "Net",
+       "series": "Net"
+      }
+     ],
+     "format": {
+      "unit": "usd",
+      "decimalPlaces": 0
+     },
+     "colors": {
+      "Parking": "#2563eb",
+      "Permits": "#7c3aed",
+      "Events": "#0ea5e9",
+      "Gross": "#64748b",
+      "Refunds": "#ef4444",
+      "Processor fees": "#f59e0b",
+      "Tax": "#94a3b8",
+      "Net": "#10b981"
+     }
+    }
+   }
+  }
+ },
+ "queries": [
+  {
+   "series": [
+    {
+     "name": "Parking",
+     "points": [
+      18400
+     ]
+    },
+    {
+     "name": "Permits",
+     "points": [
+      9600
+     ]
+    },
+    {
+     "name": "Events",
+     "points": [
+      3200
+     ]
+    },
+    {
+     "name": "Refunds",
+     "points": [
+      1150
+     ]
+    },
+    {
+     "name": "Processor fees",
+     "points": [
+      920
+     ]
+    },
+    {
+     "name": "Tax",
+     "points": [
+      2480
+     ]
+    },
+    {
+     "name": "Net",
+     "points": [
+      26650
+     ]
+    }
+   ]
+  }
+ ]
+}
